@@ -1,0 +1,132 @@
+{
+  "n_rows": 30000,
+  "n_train": 24000,
+  "n_test": 6000,
+  "test_size": 0.2,
+  "random_state": 42,
+  "stratified": true,
+  "positive_class": 1,
+  "primary_metric": "f1",
+  "best_model": "decision_tree",
+  "best_metric_value": 0.47337850919651503,
+  "original_model": {
+    "path": "credit_model.joblib",
+    "type": "DecisionTreeClassifier",
+    "params": {
+      "max_depth": 3,
+      "random_state": 42
+    },
+    "matches_current_training_split": true,
+    "used_as": "decision_tree"
+  },
+  "knn_params": {
+    "n_neighbors": 15,
+    "scaling": "StandardScaler fitted on train only"
+  },
+  "forest_params": {
+    "n_estimators": 100,
+    "random_state": 42
+  },
+  "results": {
+    "knn": {
+      "metrics": {
+        "accuracy": 0.8063333333333333,
+        "precision": 0.6147426981919333,
+        "recall": 0.33308214016578747,
+        "f1": 0.43206256109481916,
+        "roc_auc": 0.7326866600946835
+      },
+      "confusion": {
+        "labels": [
+          0,
+          1
+        ],
+        "matrix": [
+          [
+            4396,
+            277
+          ],
+          [
+            885,
+            442
+          ]
+        ],
+        "true_negative": 4396,
+        "false_positive": 277,
+        "false_negative": 885,
+        "true_positive": 442
+      },
+      "supports_predict_proba": true,
+      "n_test": 6000,
+      "comparable_test_set": true
+    },
+    "decision_tree": {
+      "metrics": {
+        "accuracy": 0.8186666666666667,
+        "precision": 0.6617050067658998,
+        "recall": 0.36850037678975134,
+        "f1": 0.47337850919651503,
+        "roc_auc": 0.7285239114340087
+      },
+      "confusion": {
+        "labels": [
+          0,
+          1
+        ],
+        "matrix": [
+          [
+            4423,
+            250
+          ],
+          [
+            838,
+            489
+          ]
+        ],
+        "true_negative": 4423,
+        "false_positive": 250,
+        "false_negative": 838,
+        "true_positive": 489
+      },
+      "supports_predict_proba": true,
+      "n_test": 6000,
+      "comparable_test_set": true
+    },
+    "random_forest": {
+      "metrics": {
+        "accuracy": 0.812,
+        "precision": 0.6324900133155792,
+        "recall": 0.3579502637528259,
+        "f1": 0.4571703561116458,
+        "roc_auc": 0.7505958244954782
+      },
+      "confusion": {
+        "labels": [
+          0,
+          1
+        ],
+        "matrix": [
+          [
+            4397,
+            276
+          ],
+          [
+            852,
+            475
+          ]
+        ],
+        "true_negative": 4397,
+        "false_positive": 276,
+        "false_negative": 852,
+        "true_positive": 475
+      },
+      "supports_predict_proba": true,
+      "n_test": 6000,
+      "comparable_test_set": true
+    }
+  },
+  "class_counts": {
+    "0": 23364,
+    "1": 6636
+  }
+}

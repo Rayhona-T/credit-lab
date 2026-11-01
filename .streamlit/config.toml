@@ -1,0 +1,51 @@
+[server]
+headless = true
+
+[client]
+toolbarMode = "minimal"
+showErrorDetails = false
+
+[theme]
+base = "dark"
+primaryColor = "#3F8C16"
+backgroundColor = "#080B0F"
+secondaryBackgroundColor = "#111923"
+textColor = "#EDF4F7"
+borderColor = "#202D38"
+linkColor = "#35E0F2"
+codeTextColor = "#B6FF4A"
+codeBackgroundColor = "#0D1219"
+redColor = "#FF6B8A"
+orangeColor = "#F5C542"
+yellowColor = "#F5C542"
+greenColor = "#B6FF4A"
+blueColor = "#35E0F2"
+grayColor = "#657582"
+font = "IBM Plex Sans:https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+headingFont = "IBM Plex Sans:https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600;700&display=swap"
+codeFont = "'IBM Plex Mono':https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+baseFontSize = 15
+baseRadius = "0.55rem"
+buttonRadius = "0.45rem"
+showWidgetBorder = true
+showSidebarBorder = true
+linkUnderline = false
+paddingTop = "1.1rem"
+paddingBottom = "2rem"
+headingFontSizes = ["2.4rem", "1.55rem", "1.2rem", "1.05rem", "0.95rem", "0.85rem"]
+headingFontWeights = [700, 650, 600, 600, 500, 500]
+metricValueFontSize = "1.7rem"
+metricValueFontWeight = 700
+chartCategoricalColors = ["#B6FF4A", "#35E0F2", "#F5C542", "#FF6B8A", "#91A0AD", "#7C8CFF", "#EDF4F7"]
+chartSequentialColors = ["#0D1219", "#143018", "#1F4A1C", "#2F6B22", "#4A9A12", "#6FBF2A", "#98E03A", "#B6FF4A", "#D4FF8F", "#EEFFC9"]
+chartDivergingColors = ["#FF6B8A", "#F08A9A", "#E0A8A8", "#D4C4B0", "#C8D4B8", "#A8D4C8", "#70C8D8", "#35E0F2", "#7C8CFF", "#B6FF4A"]
+
+[theme.sidebar]
+backgroundColor = "#0D1219"
+secondaryBackgroundColor = "#111923"
+textColor = "#EDF4F7"
+borderColor = "#202D38"
+primaryColor = "#3F8C16"
+linkColor = "#35E0F2"
+codeBackgroundColor = "#111923"
+paddingTop = "0.6rem"

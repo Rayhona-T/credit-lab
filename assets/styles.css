@@ -1,0 +1,116 @@
+/* CREDIT LAB — Neon Laboratory. Accents only; layout stays readable. */
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap");
+
+html, body, [data-testid="stAppViewContainer"] {
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+}
+
+[data-testid="stAppViewContainer"] {
+  background:
+    radial-gradient(1200px 500px at 12% -10%, rgba(53, 224, 242, 0.07), transparent 55%),
+    radial-gradient(900px 420px at 100% 0%, rgba(182, 255, 74, 0.05), transparent 50%),
+    linear-gradient(180deg, #080B0F 0%, #080B0F 100%);
+}
+
+[data-testid="stAppViewContainer"]::before {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(32, 45, 56, 0.35) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(32, 45, 56, 0.35) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.45), transparent 42%);
+  opacity: 0.5;
+}
+
+[data-testid="stHeader"] {
+  background: rgba(8, 11, 15, 0.72);
+  backdrop-filter: blur(10px);
+}
+
+.lab-kicker {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #35E0F2;
+  margin-bottom: 0.35rem;
+}
+
+.lab-hero h1, .lab-hero-title {
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  margin: 0 0 0.4rem 0;
+}
+
+.lab-hero .accent {
+  color: #B6FF4A;
+}
+
+.lab-lede {
+  color: #91A0AD;
+  font-size: 1.05rem;
+  max-width: 46rem;
+}
+
+.lab-chip {
+  display: inline-block;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.75rem;
+  color: #B6FF4A;
+  border: 1px solid #202D38;
+  background: #111923;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+}
+
+.lab-footer {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #202D38;
+  color: #657582;
+  font-size: 0.85rem;
+}
+
+.lab-cell-note {
+  padding: 0.9rem 1rem;
+  border: 1px solid #202D38;
+  background: #111923;
+  border-left: 3px solid #35E0F2;
+  border-radius: 0.6rem;
+}
+
+.lab-warn-bar {
+  border-left-color: #F5C542;
+}
+
+.lab-risk-bar {
+  border-left-color: #FF6B8A;
+}
+
+.lab-ok-bar {
+  border-left-color: #B6FF4A;
+}
+
+div[data-testid="stMetric"] {
+  background: #111923;
+  border: 1px solid #202D38;
+  border-radius: 0.7rem;
+  padding: 0.75rem 0.9rem;
+}
+
+div[data-testid="stMetric"] label {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  letter-spacing: 0.04em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
